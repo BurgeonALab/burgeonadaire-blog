@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import './services/firebase';
 import { Red_Hat_Text } from "next/font/google";
 import "./globals.css";
+import Script from 'next/script';
 
 const inter = Red_Hat_Text({ subsets: ["latin"] });
 
@@ -14,6 +14,15 @@ export const metadata: Metadata = {
       url: "https://burgeonadaire.com"
     }
   ],
+  openGraph: {
+    title: "Explore Our Minds | Burgeon Adaire Blog",
+    description: "Burgeon Adaire Blog",
+    locale: "en_US",
+    alternateLocale: "id_ID",
+    type: "website",
+    url: "https://blog.burgeonadaire.com",
+    siteName: "Burgeon Adaire Blog",
+  }
 };
 
 export default function RootLayout({
@@ -28,6 +37,17 @@ export default function RootLayout({
       >
         {children}
       </body>
+
+      <Script id="gtg-script1" async src="https://www.googletagmanager.com/gtag/js?id=G-MF2FX36TRF"></Script>
+      <Script id="gtg-script2">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-MF2FX36TRF');
+        `}
+      </Script>
     </html>
   );
 }
