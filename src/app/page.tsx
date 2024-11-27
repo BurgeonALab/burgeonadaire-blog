@@ -1,12 +1,12 @@
 import { Fragment } from 'react';
-import Link from 'next/link'
+import Link from 'next/link';
 import Head from 'next/head';
 
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   'name': 'Burgeon Adaire Blog',
-  'alternateName': 'Our Minds Inside Burgeon Adaire',
+  'alternateName': 'BAB',
   'url': 'https://blog.burgeonadaire.com'
 }
 

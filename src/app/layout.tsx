@@ -6,7 +6,7 @@ import Script from 'next/script';
 const inter = Red_Hat_Text({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Explore Our Minds | Burgeon Adaire Blog",
+  title: "Explore Our Minds | PT. Burgeon Adaire International",
   description: "Burgeon Adaire Blog.",
   authors: [
     {
@@ -15,8 +15,8 @@ export const metadata: Metadata = {
     }
   ],
   openGraph: {
-    title: "Explore Our Minds | Burgeon Adaire Blog",
-    description: "Burgeon Adaire Blog",
+    title: "Explore Our Minds | PT. Burgeon Adaire International",
+    description: "Burgeon Adaire Blog.",
     locale: "en_US",
     alternateLocale: "id_ID",
     type: "website",
